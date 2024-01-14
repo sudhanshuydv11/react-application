@@ -3,6 +3,11 @@ const webpack = require("webpack");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 
 module.exports={
+    mode:'development',
+    devServer: {
+      static: './dist',
+      compress: true
+    },
     entry: "./index.js",
     output: {
       filename: "bundle.js",
